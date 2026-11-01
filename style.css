@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+
+body{
+    background: black;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background: black;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns:624px 625px;  
+  width: 1249px;
+  position: relative;
+}
+
+
+.services-card {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 48px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-card-bg-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+}
+
+
+.services-card:nth-child(1)  {
+     background: url(./Rectangle\ 20.png); 
+     height: 289px; 
+}
+.services-card:nth-child(2)  { 
+    background: url(./Rectangle\ 21.png); 
+    height: 289px; 
+}
+.services-card:nth-child(3)  { 
+    background: url(./Rectangle\ 22.png); 
+    height: 289px; 
+}
+.services-card:nth-child(4)  { 
+    background: url(./Rectangle\ 23.png); 
+    height: 289px; 
+}
+
+
+.services-card-number {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  margin-top: 26px; 
+  font-family: "Unbounded", "Unbounded-Light", Helvetica, sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 40px;
+}
+
+
+.services-card-text {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  margin-top: 37px; 
+  max-width: 276px;
+  min-height: 51px;
+  display: flex;
+  align-items: center;
+  font-family: "Inter Tight", "Inter Tight-Regular", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #e4e4e4;
+  font-size: 14px;
+}
+
+
+@media (max-width: 1280px) {
+.services-grid{
+    grid-template-columns: none;
+    justify-content: center;
+    width: 390px;
+    flex-direction: row;
+}
+}
